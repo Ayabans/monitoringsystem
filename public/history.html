@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>History</h1>
+        <div class="burger-button" onclick="toggleMenu()">☰</div>
+        <div class="burger-dropdown" id="burgerDropdown">
+            <a href="homepage.html">Home</a>
+            <a href="stocks.html">Stocks</a>
+            <a href="history.html">History</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <table id="historyTable">
+            <thead>
+                <tr>
+                    <th>Transaction Type</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Contact Number</th>
+                    <th>Company Name</th>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Unit of Measurement</th>
+                    <th>Date</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- History data will be populated here by script.js -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

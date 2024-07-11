@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="emoh">Home</h1>
+        <div class="burger-button" onclick="toggleMenu()">☰</div>
+        <div class="burger-dropdown" id="burgerDropdown">
+            <a href="homepage.html">Home</a>
+            <a href="stocks.html">Stocks</a>
+            <a href="history.html">History</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="greeting"></div>
+        <p>
+            <div class="button-container">
+                <button onclick="location.href='stockin.html'">Stock In</button>
+                <button onclick="location.href='stockout.html'">Stock Out</button>
+            </div></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

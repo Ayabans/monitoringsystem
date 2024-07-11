@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="outstock">Stock Out</h1>
+        <div class="burger-button" onclick="toggleMenu()">☰</div>
+        <div class="burger-dropdown" id="burgerDropdown">
+            <a href="homepage.html">Home</a>
+            <a href="stocks.html">Stocks</a>
+            <a href="history.html">History</a>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+    <form id="stockout-form" action="/stockout" method="POST">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber" required><br><br>
+
+        <label for="itemName">Item Name:</label>
+        <input type="text" id="itemName" name="itemName" required><br><br>
+
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" name="companyName" required><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required><br><br>
+
+        <label for="unitOfMeasurement">Unit of Measurement:</label>
+        <input type="text" id="unitOfMeasurement" name="unitOfMeasurement" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="timestamp">Timestamp:</label>
+        <input type="time" id="timestamp" name="timestamp" required><br><br>
+        
+        <button type="button" onclick="showSummary()">Submit</button>
+    </form>
+
+    <!-- Modal for summary -->
+    <div id="summaryModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSummary()">&times;</span>
+            <h2>Summary</h2>
+            <p id="summaryContent"></p>
+            <button id="confirmSubmit">Confirm</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
